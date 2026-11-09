@@ -1,0 +1,653 @@
+{
+ "HW": {
+  "HW_AVAILCPU": {
+   "comment": "int: number of available CPUs",
+   "num": 25
+  },
+  "HW_BUS_FREQ": {
+   "comment": "int: Bus Frequency",
+   "num": 14
+  },
+  "HW_BYTEORDER": {
+   "comment": "int: machine byte order",
+   "num": 4
+  },
+  "HW_CACHELINE": {
+   "comment": "int: Cache Line Size in Bytes",
+   "num": 16
+  },
+  "HW_CPU_FREQ": {
+   "comment": "int: CPU Frequency",
+   "num": 15
+  },
+  "HW_DISKNAMES": {
+   "comment": "strings: disk drive names",
+   "num": 8
+  },
+  "HW_DISKSTATS": {
+   "comment": "struct: diskstats[]",
+   "num": 9
+  },
+  "HW_EPOCH": {
+   "comment": "int: 0 for Legacy, else NewWorld",
+   "num": 10
+  },
+  "HW_FLOATINGPT": {
+   "comment": "int: has HW floating point?",
+   "num": 11
+  },
+  "HW_L1DCACHESIZE": {
+   "comment": "int: L1 D Cache Size in Bytes",
+   "num": 18
+  },
+  "HW_L1ICACHESIZE": {
+   "comment": "int: L1 I Cache Size in Bytes",
+   "num": 17
+  },
+  "HW_L2CACHESIZE": {
+   "comment": "int: L2 Cache Size in Bytes",
+   "num": 20
+  },
+  "HW_L2SETTINGS": {
+   "comment": "int: L2 Cache Settings",
+   "num": 19
+  },
+  "HW_L3CACHESIZE": {
+   "comment": "int: L3 Cache Size in Bytes",
+   "num": 22
+  },
+  "HW_L3SETTINGS": {
+   "comment": "int: L3 Cache Settings",
+   "num": 21
+  },
+  "HW_MACHINE": {
+   "comment": "string: machine class (deprecated: use HW_PRODUCT)",
+   "num": 1
+  },
+  "HW_MACHINE_ARCH": {
+   "comment": "string: machine architecture",
+   "num": 12
+  },
+  "HW_MAXID": {
+   "comment": "number of valid hw ids",
+   "num": 28
+  },
+  "HW_MEMSIZE": {
+   "comment": "uint64_t: physical ram size",
+   "num": 24
+  },
+  "HW_MODEL": {
+   "comment": "string: specific machine model (deprecated: use HW_TARGET)",
+   "num": 2
+  },
+  "HW_NCPU": {
+   "comment": "int: number of cpus",
+   "num": 3
+  },
+  "HW_PAGESIZE": {
+   "comment": "int: software page size",
+   "num": 7
+  },
+  "HW_PHYSMEM": {
+   "comment": "int: total memory",
+   "num": 5
+  },
+  "HW_PRODUCT": {
+   "comment": "string: product identifier",
+   "num": 27
+  },
+  "HW_TARGET": {
+   "comment": "string: model identifier",
+   "num": 26
+  },
+  "HW_TB_FREQ": {
+   "comment": "int: Bus Frequency",
+   "num": 23
+  },
+  "HW_USERMEM": {
+   "comment": "int: non-kernel memory",
+   "num": 6
+  },
+  "HW_VECTORUNIT": {
+   "comment": "int: has HW vector unit?",
+   "num": 13
+  }
+ },
+ "KERN": {
+  "KERN_AFFINITY": {
+   "comment": "xxx",
+   "num": 43
+  },
+  "KERN_AIOMAX": {
+   "comment": "int: max aio requests",
+   "num": 46
+  },
+  "KERN_AIOPROCMAX": {
+   "comment": "int: max aio requests per process",
+   "num": 47
+  },
+  "KERN_AIOTHREADS": {
+   "comment": "int: max aio worker threads",
+   "num": 48
+  },
+  "KERN_ARGMAX": {
+   "comment": "int: max arguments to exec",
+   "num": 8
+  },
+  "KERN_BOOTFILE": {
+   "comment": "string: name of booted kernel",
+   "num": 28
+  },
+  "KERN_BOOTTIME": {
+   "comment": "struct: time kernel was booted",
+   "num": 21
+  },
+  "KERN_CHECKOPENEVT": {
+   "comment": "spi: check the VOPENEVT flag on vnodes at open time",
+   "num": 70
+  },
+  "KERN_CLOCKRATE": {
+   "comment": "struct: struct clockrate",
+   "num": 12
+  },
+  "KERN_COREDUMP": {
+   "comment": "int: whether to coredump at all",
+   "num": 51
+  },
+  "KERN_COREFILE": {
+   "comment": "string: corefile format string",
+   "num": 50
+  },
+  "KERN_DUMMY": {
+   "comment": "unused",
+   "num": 33
+  },
+  "KERN_DUMPDEV": {
+   "comment": "dev_t: device to dump on",
+   "num": 31
+  },
+  "KERN_EXEC": {
+   "comment": "xxx",
+   "num": 45
+  },
+  "KERN_FILE": {
+   "comment": "struct: file entries",
+   "num": 15
+  },
+  "KERN_HOSTID": {
+   "comment": "int: host identifier",
+   "num": 11
+  },
+  "KERN_HOSTNAME": {
+   "comment": "string: hostname",
+   "num": 10
+  },
+  "KERN_IPC": {
+   "comment": "node: anything related to IPC",
+   "num": 32
+  },
+  "KERN_JOB_CONTROL": {
+   "comment": "int: is job control available",
+   "num": 19
+  },
+  "KERN_KDBUFWAIT": {
+   "comment": "",
+   "num": 23
+  },
+  "KERN_KDCPUMAP": {
+   "comment": "",
+   "num": 24
+  },
+  "KERN_KDCPUMAP_EXT": {
+   "comment": "",
+   "num": 25
+  },
+  "KERN_KDDFLAGS": {
+   "comment": "",
+   "num": 2
+  },
+  "KERN_KDEBUG": {
+   "comment": "int: kernel trace points",
+   "num": 24
+  },
+  "KERN_KDEFLAGS": {
+   "comment": "",
+   "num": 1
+  },
+  "KERN_KDENABLE": {
+   "comment": "",
+   "num": 3
+  },
+  "KERN_KDGETBUF": {
+   "comment": "",
+   "num": 5
+  },
+  "KERN_KDGETENTROPY": {
+   "comment": "obsolete",
+   "num": 16
+  },
+  "KERN_KDGETREG": {
+   "comment": "",
+   "num": 9
+  },
+  "KERN_KDGET_EDM": {
+   "comment": "",
+   "num": 27
+  },
+  "KERN_KDPIDEX": {
+   "comment": "",
+   "num": 14
+  },
+  "KERN_KDPIDTR": {
+   "comment": "",
+   "num": 11
+  },
+  "KERN_KDREADCURTHRMAP": {
+   "comment": "",
+   "num": 21
+  },
+  "KERN_KDREADTR": {
+   "comment": "",
+   "num": 10
+  },
+  "KERN_KDREMOVE": {
+   "comment": "",
+   "num": 7
+  },
+  "KERN_KDSETBUF": {
+   "comment": "",
+   "num": 4
+  },
+  "KERN_KDSETREG": {
+   "comment": "",
+   "num": 8
+  },
+  "KERN_KDSETRTCDEC": {
+   "comment": "obsolete",
+   "num": 15
+  },
+  "KERN_KDSETUP": {
+   "comment": "",
+   "num": 6
+  },
+  "KERN_KDSET_EDM": {
+   "comment": "",
+   "num": 26
+  },
+  "KERN_KDSET_TYPEFILTER": {
+   "comment": "",
+   "num": 22
+  },
+  "KERN_KDTEST": {
+   "comment": "",
+   "num": 19
+  },
+  "KERN_KDTHRMAP": {
+   "comment": "",
+   "num": 12
+  },
+  "KERN_KDWRITEMAP": {
+   "comment": "",
+   "num": 18
+  },
+  "KERN_KDWRITETR": {
+   "comment": "",
+   "num": 17
+  },
+  "KERN_KDWRITETR_V3": {
+   "comment": "",
+   "num": 28
+  },
+  "KERN_LOGSIGEXIT": {
+   "comment": "int: do we log sigexit procs?",
+   "num": 36
+  },
+  "KERN_LOW_PRI_DELAY": {
+   "comment": "int: set/reset throttle delay - milliseconds",
+   "num": 57
+  },
+  "KERN_LOW_PRI_WINDOW": {
+   "comment": "int: set/reset throttle window - milliseconds",
+   "num": 56
+  },
+  "KERN_MAXFILES": {
+   "comment": "int: max open files",
+   "num": 7
+  },
+  "KERN_MAXFILESPERPROC": {
+   "comment": "int: max open files per proc",
+   "num": 29
+  },
+  "KERN_MAXID": {
+   "comment": "number of valid kern ids",
+   "num": 72
+  },
+  "KERN_MAXPARTITIONS": {
+   "comment": "int: number of partitions/disk",
+   "num": 23
+  },
+  "KERN_MAXPROC": {
+   "comment": "int: max processes",
+   "num": 6
+  },
+  "KERN_MAXPROCPERUID": {
+   "comment": "int: max processes per uid",
+   "num": 30
+  },
+  "KERN_MAXVNODES": {
+   "comment": "int: max vnodes",
+   "num": 5
+  },
+  "KERN_NETBOOT": {
+   "comment": "int: are we netbooted? 1=yes,0=no",
+   "num": 40
+  },
+  "KERN_NGROUPS": {
+   "comment": "int: # of supplemental group ids",
+   "num": 18
+  },
+  "KERN_NISDOMAINNAME": {
+   "comment": "string: YP domain name",
+   "num": 22
+  },
+  "KERN_NTP_PLL": {
+   "comment": "node: NTP PLL control",
+   "num": 27
+  },
+  "KERN_NX_PROTECTION": {
+   "comment": "int: whether no-execute protection is enabled",
+   "num": 60
+  },
+  "KERN_OPENEVT_PROC": {
+   "comment": "",
+   "num": 1
+  },
+  "KERN_OSRELDATE": {
+   "comment": "int: OS release date",
+   "num": 26
+  },
+  "KERN_OSRELEASE": {
+   "comment": "string: system release",
+   "num": 2
+  },
+  "KERN_OSREV": {
+   "comment": "int: system revision",
+   "num": 3
+  },
+  "KERN_OSTYPE": {
+   "comment": "string: system version",
+   "num": 1
+  },
+  "KERN_OSVERSION": {
+   "comment": "for build number i.e. 9A127",
+   "num": 65
+  },
+  "KERN_POSIX": {
+   "comment": "node: posix tunables",
+   "num": 58
+  },
+  "KERN_POSIX1": {
+   "comment": "int: POSIX.1 version",
+   "num": 17
+  },
+  "KERN_PROC": {
+   "comment": "struct: process entries",
+   "num": 14
+  },
+  "KERN_PROCARGS": {
+   "comment": "",
+   "num": 38
+  },
+  "KERN_PROCARGS2": {
+   "comment": "",
+   "num": 49
+  },
+  "KERN_PROCDELAYTERM": {
+   "comment": "int: set/reset current proc for delayed termination during s",
+   "num": 53
+  },
+  "KERN_PROCNAME": {
+   "comment": "setup process program  name(2*MAXCOMLEN)",
+   "num": 62
+  },
+  "KERN_PROF": {
+   "comment": "node: kernel profiling info",
+   "num": 16
+  },
+  "KERN_PS_STRINGS": {
+   "comment": "int: address of PS_STRINGS",
+   "num": 34
+  },
+  "KERN_RAGEVNODE": {
+   "comment": "",
+   "num": 68
+  },
+  "KERN_RAGE_PROC": {
+   "comment": "",
+   "num": 1
+  },
+  "KERN_RAGE_THREAD": {
+   "comment": "",
+   "num": 2
+  },
+  "KERN_SAFEBOOT": {
+   "comment": "are we booted safe?",
+   "num": 66
+  },
+  "KERN_SAVED_IDS": {
+   "comment": "int: saved set-user/group-ID",
+   "num": 20
+  },
+  "KERN_SECURELVL": {
+   "comment": "int: system security level",
+   "num": 9
+  },
+  "KERN_SHREG_PRIVATIZABLE": {
+   "comment": "int: can shared regions be privatized ?",
+   "num": 54
+  },
+  "KERN_SPECULATIVE_READS": {
+   "comment": "int: whether speculative reads are disabled",
+   "num": 64
+  },
+  "KERN_SUGID_COREDUMP": {
+   "comment": "int: whether to dump SUGID cores",
+   "num": 52
+  },
+  "KERN_SYMFILE": {
+   "comment": "string: kernel symbol filename",
+   "num": 37
+  },
+  "KERN_SYSV": {
+   "comment": "node: System V IPC information",
+   "num": 42
+  },
+  "KERN_TFP": {
+   "comment": "Task for pid settings",
+   "num": 61
+  },
+  "KERN_TFP_POLICY": {
+   "comment": "",
+   "num": 1
+  },
+  "KERN_TFP_POLICY_DEFAULT": {
+   "comment": "Default  Mode: related ones allowed and upcall authenticatio",
+   "num": 2
+  },
+  "KERN_TFP_POLICY_DENY": {
+   "comment": "Deny Mode: None allowed except privileged",
+   "num": 0
+  },
+  "KERN_THALTSTACK": {
+   "comment": "for compat with older x86 and does nothing",
+   "num": 63
+  },
+  "KERN_THREADNAME": {
+   "comment": "set/get thread name",
+   "num": 71
+  },
+  "KERN_TRANSLATE": {
+   "comment": "xxx",
+   "num": 44
+  },
+  "KERN_TTY": {
+   "comment": "node: tty settings",
+   "num": 69
+  },
+  "KERN_UNOPENEVT_PROC": {
+   "comment": "",
+   "num": 2
+  },
+  "KERN_UNRAGE_PROC": {
+   "comment": "",
+   "num": 3
+  },
+  "KERN_UNRAGE_THREAD": {
+   "comment": "",
+   "num": 4
+  },
+  "KERN_UPDATEINTERVAL": {
+   "comment": "int: update process sleep time",
+   "num": 25
+  },
+  "KERN_USRSTACK32": {
+   "comment": "int: address of USRSTACK",
+   "num": 35
+  },
+  "KERN_USRSTACK64": {
+   "comment": "LP64 user stack query",
+   "num": 59
+  },
+  "KERN_VERSION": {
+   "comment": "string: compile time info",
+   "num": 4
+  },
+  "KERN_VNODE": {
+   "comment": "struct: vnode structures",
+   "num": 13
+  }
+ },
+ "KERN_IPC": {
+  "KIPC_MAXSOCKBUF": {
+   "comment": "int: max size of a socket buffer",
+   "num": 1
+  },
+  "KIPC_MAX_DATALEN": {
+   "comment": "int: max length of data?",
+   "num": 7
+  },
+  "KIPC_MAX_HDR": {
+   "comment": "int: max total length of headers",
+   "num": 6
+  },
+  "KIPC_MAX_LINKHDR": {
+   "comment": "int: max length of link header",
+   "num": 4
+  },
+  "KIPC_MAX_PROTOHDR": {
+   "comment": "int: max length of network header",
+   "num": 5
+  },
+  "KIPC_MBSTAT": {
+   "comment": "struct: mbuf usage statistics",
+   "num": 8
+  },
+  "KIPC_NMBCLUSTERS": {
+   "comment": "int: maximum mbuf clusters",
+   "num": 9
+  },
+  "KIPC_SOCKBUF_WASTE": {
+   "comment": "int: wastage factor in sockbuf",
+   "num": 2
+  },
+  "KIPC_SOMAXCONN": {
+   "comment": "int: max length of connection q",
+   "num": 3
+  },
+  "KIPC_SOQLIMITCOMPAT": {
+   "comment": "int: socket queue limit",
+   "num": 10
+  }
+ },
+ "TOP": {
+  "CTL_DEBUG": {
+   "comment": "",
+   "num": 5
+  },
+  "CTL_DEBUG_MAXID": {
+   "comment": "",
+   "num": 20
+  },
+  "CTL_DEBUG_NAME": {
+   "comment": "",
+   "num": 0
+  },
+  "CTL_DEBUG_VALUE": {
+   "comment": "",
+   "num": 1
+  },
+  "CTL_HW": {
+   "comment": "",
+   "num": 6
+  },
+  "CTL_KERN": {
+   "comment": "",
+   "num": 1
+  },
+  "CTL_MACHDEP": {
+   "comment": "",
+   "num": 7
+  },
+  "CTL_MAXID": {
+   "comment": "",
+   "num": 9
+  },
+  "CTL_MAXNAME": {
+   "comment": "",
+   "num": 12
+  },
+  "CTL_NET": {
+   "comment": "",
+   "num": 4
+  },
+  "CTL_UNSPEC": {
+   "comment": "",
+   "num": 0
+  },
+  "CTL_USER": {
+   "comment": "",
+   "num": 8
+  },
+  "CTL_VFS": {
+   "comment": "",
+   "num": 3
+  },
+  "CTL_VM": {
+   "comment": "",
+   "num": 2
+  }
+ },
+ "VFS": {},
+ "VM": {
+  "VM_LOADAVG": {
+   "comment": "struct loadavg",
+   "num": 2
+  },
+  "VM_MACHFACTOR": {
+   "comment": "struct loadavg with mach factor",
+   "num": 4
+  },
+  "VM_MAXID": {
+   "comment": "number of valid vm ids",
+   "num": 6
+  },
+  "VM_METER": {
+   "comment": "struct vmmeter",
+   "num": 1
+  },
+  "VM_SWAPUSAGE": {
+   "comment": "total swap usage",
+   "num": 5
+  }
+ }
+}
